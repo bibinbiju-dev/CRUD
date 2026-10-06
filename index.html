@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Libray</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-5 bg-primary">
+      <h1 class="mb-4 text-center">Book Library</h1>
+      <!-- book form -->
+      <form id="bookform">
+        <input
+          type="text"
+          id="bookname"
+          class="form-control mb-3"
+          placeholder="Book Name"
+          required
+        />
+        <input
+          type="text"
+          id="author"
+          class="form-control mb-3"
+          placeholder="Author"
+          required
+        />
+        <input
+          type="text"
+          id="category"
+          class="form-control mb-3"
+          placeholder="Category"
+          required
+        />
+        <button type="submit" class="btn btn-danger">Add Book</button>
+      </form>
+      <hr />
+      <!-- books -->
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="booklist"></tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
